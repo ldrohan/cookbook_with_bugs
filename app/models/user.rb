@@ -9,7 +9,7 @@
 #  updated_at :datetime         not null
 #
 
-def User < ActiveRecord::Base
+class User < ActiveRecord::Base
   has_secure_password
 
   before_save { |user| user.email = email.downcase }

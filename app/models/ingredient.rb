@@ -11,8 +11,8 @@
 #  updated_at  :datetime         not null
 #
 
-class Ingredients < ActiveRecord::Base
+class Ingredient < ActiveRecord::Base
   # TODO: figure out what these are for?
-  #has_many :ingredient_measurements
-  #has_many :ingredients, through: :ingredient_measurements
+  has_many :ingredient_measurements
+  has_many :ingredients, through: :ingredient_measurements
 end
